@@ -1,3 +1,14 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 .App {
   text-align: center;
 }
@@ -29,4 +40,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.MusicPlayer {
+  height: 200px;
+  background-color: gray;
+}
+
+.lyricsDisplay {
+  height: 200px;
+  background-color: gray;
+
+}
+
+.column {
+  background-color: olive;
+  margin: 10px;
 }
