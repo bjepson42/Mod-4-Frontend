@@ -6,14 +6,12 @@ class SongList extends Component {
   render(){
     return (
           <div>
-          {this.props.songListTitle}
-            <Song />
-            <Song />
-            <Song />
-            <Song />
-            <Song />
-            <Song />
-            <Song />
+          <h2>{this.props.songListTitle}</h2>
+            <div className="songList">
+              {this.props.songData.map(song => {
+                return <Song handleClick={this.props.handleClick} songData={song} key={`song-${song.Id}`}/>
+              })}
+            </div>
           </div>
     )
   }

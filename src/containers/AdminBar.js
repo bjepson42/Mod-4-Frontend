@@ -8,8 +8,8 @@ class VerticalBar extends Component {
   render(){
     return (
           <div className="five wide column">
-            <MusicPlayer />
-            <SongList songListTitle="Current Playlist" />
+            <MusicPlayer playlist={this.props.currentPlaylist} />
+            <SongList songListTitle="Current Playlist" songData={this.props.currentPlaylist} />
             <LyricsDisplay />
           </div>
     )

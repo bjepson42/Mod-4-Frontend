@@ -5,7 +5,9 @@ class LyricsDisplay extends Component {
   render(){
     return (
           <div className="lyricsDisplay">
-            I'm the Lyrics Window
+            <div className="lyricsDisplayText">
+              I'm the Lyrics Window
+            </div>
           </div>
     )
   }
